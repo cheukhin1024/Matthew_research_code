@@ -22,7 +22,7 @@ def find_MaxDepthOfQuotedResearch(df):
         quoted_research_code = str(df[column_c][i])
         max_depth = 0
       
-  return max-depth_of_each_columnC_cell         
+  return max_depth_of_each_columnC_cell         
       
 #Test the function
 print(find_MaxDepthofQuotedResearch(df))
