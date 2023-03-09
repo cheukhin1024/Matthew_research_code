@@ -3,8 +3,6 @@ import pandas as pd
 df = pd.read_csv('<file path>')
 df.head(10)
 
-#df_column_c = df['column_c'].drop_duplicates 
-
 def find_MaxDepthOfQuotedResearch(df):
   max_depth = 0
   max_depth_of_each_columnC_cell = []
@@ -16,7 +14,7 @@ def find_MaxDepthOfQuotedResearch(df):
         max_depth +=1
         quoted_research_code.replace(value_e)
         
-      else:
+     else:
         max_depth_of_each_columnC_cell.append(max_depth)
         i+=1
         quoted_research_code = str(df[column_c][i])
@@ -25,4 +23,4 @@ def find_MaxDepthOfQuotedResearch(df):
   return max_depth_of_each_columnC_cell         
       
 #Test the function
-print(find_MaxDepthofQuotedResearch(df))
+print(find_MaxDepthOfQuotedResearch(df))
