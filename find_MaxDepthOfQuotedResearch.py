@@ -1,6 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv('<file path>')
+# merging two csv files
+df = pd.concat(map(pd.read_excel, ['G:\Data\156 2021-1959年上市公司专利引用数据\授权专利的被引用信息\授权专利的被引用信息_1', 'G:\Data\156 2021-1959年上市公司专利引用数据\授权专利的被引用信息\授权专利的被引用信息_2', , 'G:\Data\156 2021-1959年上市公司专利引用数据\授权专利的被引用信息\授权专利的被引用信息_3', , 'G:\Data\156 2021-1959年上市公司专利引用数据\授权专利的被引用信息\授权专利的被引用信息_4']), ignore_index=True)
 df.head(10)
 
 def find_MaxDepthOfQuotedResearch(df):
